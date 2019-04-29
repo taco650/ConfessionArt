@@ -4,7 +4,7 @@ import sys
 
 def main():
     #Game Constants
-    TIME_FOR_DECSISION = 10
+    TIME_FOR_DECSISION = 40
     LOST_POPUP = 2
 
 
@@ -21,11 +21,10 @@ def main():
     logo = pygame.image.load("logo32x32.png")
     alivePic = pygame.image.load("alive1.jpg")
     deadPic = pygame.image.load("dead1.jpg")
-    blackBackground = pygame.image.load("A_blank_black_picture.jpg")
-    backgrounds = [alivePic, deadPic, blackBackground]
+    backgrounds = [alivePic, deadPic]
     
     #create window title 
-    pygame.display.set_caption("minimal program")
+    pygame.display.set_caption("Confession Art")
     #set icon image
     pygame.display.set_icon(alivePic)
     #set window size
